@@ -25,3 +25,43 @@
 #  стовпця на екран (аналогічно зробити з рядком)
 # - ввести з клавіатури порядковий номер одного стовпця і потім іншого стовпця
 # і поміняти їх місцями в матрицю (аналогічно зробити з рядком)
+
+import random
+num1 = int(input("Введіть початок масиву: "))
+num2 = int(input("Введіть кінець масиву: "))
+Num_size = 10
+numbers = []
+for i in range(Num_size):
+    if num1 < num2:
+        numbers.append(random.randint(num1, num2))
+    elif num1 > num2:
+        numbers.append(random.randint(num2, num1))
+print(numbers)
+# Сума негативних чисел
+# count_neg_sum = 0
+# for i in numbers:
+#     if i < 0:
+#         count_neg_sum -= - i
+# print(count_neg_sum)
+# # Сума парних чисел
+# count_paired_sum = 0
+# for i in numbers:
+#     if i % 2 == 0:
+#         count_paired_sum += i
+# print(count_paired_sum)
+#
+# # Сума непарних чисел
+# count_unpaired_sum = 0
+# for i in numbers:
+#     if i % 2 != 0:
+#         count_unpaired_sum += i
+# print(count_unpaired_sum)
+
+# Добуток елементів кратних 3
+print(numbers[1:1:3])
+# multiplication =
+
+
+
+
+
