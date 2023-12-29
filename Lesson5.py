@@ -65,6 +65,21 @@ print(numbers)
 #         multi *= numbers[i]
 # print(multi)
 
+# Добуток елементів між мінімальним та максимальним елементом
+# multi_min_max = min(numbers)*max(numbers)
+# print(multi_min_max)
+
+# Суму елементів, що знаходяться між першим та останнім позитивними елементами
+sum_el = 0
+# for i in numbers:
+#     if i > 0:
+#         sum_el += i
+
+
+
+
+
+
 
 
 
