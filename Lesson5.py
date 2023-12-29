@@ -57,10 +57,13 @@ print(numbers)
 #         count_unpaired_sum += i
 # print(count_unpaired_sum)
 
-# Добуток елементів кратних 3
-print(numbers[1:1:3])
-# multiplication =
-
+# Добуток елементів з індексами кратними 3
+# print(numbers[3:10:3])
+# multi = 1
+# for i in range(len(numbers)):
+#     if i % 3 == 0 and i != 0:
+#         multi *= numbers[i]
+# print(multi)
 
 
 
