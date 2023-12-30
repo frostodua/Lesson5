@@ -31,45 +31,41 @@ import random
 Num_size = 10
 numbers = []
 for i in range(Num_size):
-    if num1 < num2:
-        numbers.append(random.randint(num1, num2))
-    elif num1 > num2:
-        numbers.append(random.randint(num2, num1))
+    numbers.append(random.randint(-10,10))
 print(numbers)
-#
-# # Сума негативних чисел
-# count_neg_sum = 0
-# for i in numbers:
-#     if i < 0:
-#         count_neg_sum -= - i
-# print(count_neg_sum)
-#
-# # Сума парних чисел
-# count_paired_sum = 0
-# for i in numbers:
-#     if i % 2 == 0:
-#         count_paired_sum += i
-# print(count_paired_sum)
-#
-# # Сума непарних чисел
-# count_unpaired_sum = 0
-# for i in numbers:
-#     if i % 2 != 0:
-#         count_unpaired_sum += i
-# print(count_unpaired_sum)
-#
-# # Добуток елементів з індексами кратними 3
-# print(numbers[3:10:3])
-# multi = 1
-# for i in range(len(numbers)):
-#     if i % 3 == 0 and i != 0:
-#         multi *= numbers[i]
-# print(multi)
-#
-# # Добуток елементів між мінімальним та максимальним елементом
-# multi_min_max = min(numbers)*max(numbers)
-# print(multi_min_max)
-#
+
+# Сума негативних чисел
+count_neg_sum = 0
+for i in numbers:
+    if i < 0:
+        count_neg_sum -= - i
+print(count_neg_sum)
+
+# Сума парних чисел
+count_paired_sum = 0
+for i in numbers:
+    if i % 2 == 0:
+        count_paired_sum += i
+print(count_paired_sum)
+
+# Сума непарних чисел
+count_unpaired_sum = 0
+for i in numbers:
+    if i % 2 != 0:
+        count_unpaired_sum += i
+print(count_unpaired_sum)
+
+# Добуток елементів з індексами кратними 3
+multi = 1
+for i in range(len(numbers)):
+    if i % 3 == 0 and i != 0:
+        multi *= numbers[i]
+print(multi)
+
+# Добуток елементів між мінімальним та максимальним елементом
+multi_min_max = min(numbers)*max(numbers)
+print(multi_min_max)
+
 # # Суму елементів, що знаходяться між першим та останнім позитивними елементами
 # for i in numbers:
 #     if i > 0:
@@ -86,33 +82,21 @@ print(numbers)
 # sum_el = sum(numbers[index1+1:index2])
 # print(sum_el)
 
-# #2
-# import random
-# num1 = int(input("Введіть початок масиву: "))
-# num2 = int(input("Введіть кінець масиву: "))
-# Num_size = 10
-# numbers = []
-# for i in range(Num_size):
-#     if num1 < num2:
-#         numbers.append(random.randint(num1, num2))
-#     elif num1 > num2:
-#         numbers.append(random.randint(num2, num1))
-# print(numbers)
+#2
+# ■ Створити список цілих, що містить лише парні числа з першого списку;
+count_paired = []
+for i in numbers:
+    if i % 2 == 0:
+        count_paired.append(i)
+print(count_paired )
 
-# # ■ Створити список цілих, що містить лише парні числа з першого списку;
-# count_paired = []
-# for i in numbers:
-#     if i % 2 == 0:
-#         count_paired.append(i)
-# print(count_paired )
-#
-# # ■ Створити список цілих, що містить лише непарні числа з першого списку;
-# count_unpaired = []
-# for i in numbers:
-#     if i % 2 != 0:
-#         count_unpaired.append(i)
-# print(count_unpaired )
-#
+# ■ Створити список цілих, що містить лише непарні числа з першого списку;
+count_unpaired = []
+for i in numbers:
+    if i % 2 != 0:
+        count_unpaired.append(i)
+print(count_unpaired )
+
 # # ■ Створити список цілих, що містить лише негативні числа з першого списку;
 #
 # negative = []
