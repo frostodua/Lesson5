@@ -70,10 +70,23 @@ print(numbers)
 # print(multi_min_max)
 
 # Суму елементів, що знаходяться між першим та останнім позитивними елементами
-sum_el = 0
-# for i in numbers:
-#     if i > 0:
-#         sum_el += i
+for i in numbers:
+    if i > 0:
+        index1 = numbers.index(i)
+        print(i)
+        print(index1)
+        break
+for j in numbers[::-1]:
+    if j > 0:
+        index2 = numbers.index(j)
+        print(j)
+        print(index2)
+        break
+sum_el = sum(numbers[index1+1:index2])
+print(sum_el)
+
+
+
 
 
 
