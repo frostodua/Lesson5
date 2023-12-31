@@ -40,21 +40,21 @@ print(multi)
 multi_min_max = min(numbers)*max(numbers)
 print(multi_min_max)
 
-# # Суму елементів, що знаходяться між першим та останнім позитивними елементами
-# for i in numbers:
-#     if i > 0:
-#         index1 = numbers.index(i)
-#         print(i)
-#         print(index1)
-#         break
-# for j in numbers[::-1]:
-#     if j > 0:
-#         index2 = numbers.index(j)
-#         print(j)
-#         print(index2)
-#         break
-# sum_el = sum(numbers[index1+1:index2])
-# print(sum_el)
+# Суму елементів, що знаходяться між першим та останнім позитивними елементами
+for i in numbers:
+    if i > 0:
+        index1 = numbers.index(i)
+        print(i)
+        print(index1)
+        break
+for j in numbers[::-1]:
+    if j > 0:
+        index2 = numbers.index(j)
+        print(j)
+        print(index2)
+        break
+sum_el = sum(numbers[index1+1:index2])
+print(sum_el)
 
 # index1 = -1
 # i=0
@@ -79,22 +79,30 @@ count_paired = []
 for i in numbers:
     if i % 2 == 0:
         count_paired.append(i)
-print(count_paired )
+print(count_paired)
 
 # ■ Створити список цілих, що містить лише непарні числа з першого списку;
 count_unpaired = []
 for i in numbers:
     if i % 2 != 0:
         count_unpaired.append(i)
-print(count_unpaired )
+print(count_unpaired)
 
-# # ■ Створити список цілих, що містить лише негативні числа з першого списку;
+# ■ Створити список цілих, що містить лише негативні числа з першого списку;
 
-# negative = []
-# for i in numbers:
-#     if i < 0
+negative = []
+for i in numbers:
+    if i < 0:
+        negative.append(i)
+print(negative)
 
 # ■ Створити список цілих, що містить лише позитивні числа з першого списку.
+
+positive = []
+for i in numbers:
+    if i > 0:
+        positive.append(i)
+print(positive)
 
 
 
